@@ -19,6 +19,6 @@ python crypto.py
 
 * In Java:
 ```
-javac Crypto.java
+javac Crypto.java  
 java Crypto
 ```
