@@ -1,7 +1,7 @@
 crypto
 ============
 
-Text decryption and encryption.
+Text decryption and encryption using the PyCrypto toolkit.
 We are using AES-128 with ECB mode.
 
 Before trying out this code, make sure you install required packages by running:
