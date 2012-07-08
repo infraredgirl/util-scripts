@@ -59,3 +59,15 @@ def encrypt_text(text, enabled, secret_key):
     encoded_msg = encrypted_msg.encode('hex')
 
     return encoded_msg
+
+
+
+if __name__ == '__main__':
+    original_text = 'this is some text'
+    print 'Original text:', original_text
+
+    encrypted_text = encrypt_text(text=original_text, enabled=True, secret_key='key1key1key1key1')
+    print 'Encrypted text:', encrypted_text
+
+    decrypted_text = try_to_decrypt_text(text=encrypted_text, enabled=True, secret_key='key1key1key1key1')
+    print 'Decrypted text:', decrypted_text

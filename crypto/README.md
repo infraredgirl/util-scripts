@@ -1,25 +1,24 @@
 crypto
 ============
 
-Text decryption and encryption using the PyCrypto toolkit.
+Text decryption and encryption in Python and Java.
 We are using AES-128 with ECB mode.
 
-Before trying out this code, make sure you install required packages by running:
+Before trying out Python code, install required packages by running:
 ```
-pip install -r requirements.txt
+pip install pycrypto unittest2
 ```
 
 To try out encryption and decryption:
-```python
-from crypto import encrypt_text, try_to_decrypt_text
 
-original_text = 'this is some text'
-print 'Original text:', original_text
+* In Python:
 
-encrypted_text = encrypt_text(text=original_text, enabled=True, secret_key='key1key1key1key1')
-print 'Encrypted text:', encrypted_text
+```
+python crypto.py
+```
 
-decrypted_text = try_to_decrypt_text(text=encrypted_text, enabled=True, secret_key='key1key1key1key1')
-print 'Decrypted text:', decrypted_text
-
+* In Java:
+```
+javac Crypto.java
+java Crypto
 ```
