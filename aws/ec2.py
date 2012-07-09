@@ -24,7 +24,6 @@ def connect_to_ec2():
 def get_non_production_instances(connection):
     """
     Returns a list of non-production instances.
-    We assume that production instances have a tag set with key='env' and value='prod'.
     """
     print 'Getting non-production instances ...'
     reservations = connection.get_all_instances()
