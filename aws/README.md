@@ -18,7 +18,7 @@ configuration file.
 every instance with its elastic ip address, if this value has been provided in the configuration file.
 
 ```python
->>> from ec2 import stop_non_production_instances
+>>> from ec2 import stop_non_production_instances, start_non_production_instances
 
 
 >>> stop_non_production_instances()
